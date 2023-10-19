@@ -3,10 +3,183 @@
   @@include('html/head.html', {title: 'Главная'})
   <body>
     @@include('html/header.html')
-     <main> 
-      <div style="height: 500px;"></div>
-      <div style="height: 500px;"></div>
-      <div style="height: 500px;"></div>
+    <main class="container">
+      @@include("components/index-preview.html")
+
+      <div class="object">
+        <div class="object__wrapper">
+          <div class="object__card">
+            <div class="object__card-title">Бизнес</div>
+            <div class="object__card-description">Комфорт и функциональность в сердце города</div>
+          </div>
+
+          <button class="object__btn btn btn_primary">
+            Все объекты бизнес
+            <img class="object__btn-icon" src="./img/icons/icons.svg#arrow-right-btn" alt="" />
+          </button>
+
+          <div class="object__apartments">
+            <div class="object__apartment apartment">
+              <img src="./img/index/business-1.jpg" alt="" class="apartment__img" />
+
+              <div class="apartment__description">
+                <div class="apartment__info">
+                  <span class="apartment__name">
+                    FØRST <br />
+                    ЮАО
+                  </span>
+                  <span class="apartment__price">от 27 500 000 руб</span>
+                </div>
+                <div class="apartment__info">
+                  <span class="apartment__square">
+                    2 комнаты <br />
+                    53.5 м2 площадь
+                  </span>
+                  <a class="apartment__leave-request">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="object__apartment apartment">
+              <img src="./img/index/business-2.jpg" alt="" class="apartment__img" />
+
+              <div class="apartment__description">
+                <div class="apartment__info">
+                  <span class="apartment__name">
+                    Portland <br />
+                    ЮВАО
+                  </span>
+                  <span class="apartment__price">от 22 300 000 руб</span>
+                </div>
+                <div class="apartment__info">
+                  <span class="apartment__square">
+                    3 комнаты <br />
+                    78.9 м2 площадь
+                  </span>
+                  <a class="apartment__leave-request">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="object">
+        <div class="object__wrapper">
+          <div class="object__card">
+            <div class="object__card-title">Премиум</div>
+            <div class="object__card-description">Изысканный дизайн и превосходные удобства</div>
+          </div>
+
+          <button class="object__btn btn btn_primary">
+            Все объекты премиум
+            <img class="object__btn-icon" src="./img/icons/icons.svg#arrow-right-btn" alt="" />
+          </button>
+
+          <div class="object__apartments">
+            <div class="object__apartment apartment">
+              <img src="./img/index/premium-1.jpg" alt="" class="apartment__img" />
+
+              <div class="apartment__description">
+                <div class="apartment__info">
+                  <span class="apartment__name">
+                    REPUBLIC <br />
+                    ЦАО
+                  </span>
+                  <span class="apartment__price">от 57 700 000 руб</span>
+                </div>
+                <div class="apartment__info">
+                  <span class="apartment__square">
+                    3 комнаты <br />
+                    63.5 м2 площадь
+                  </span>
+                  <a class="apartment__leave-request">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="object__apartment apartment">
+              <img src="./img/index/premium-2.jpg" alt="" class="apartment__img" />
+
+              <div class="apartment__description">
+                <div class="apartment__info">
+                  <span class="apartment__name">
+                    Moments <br />
+                    СЗАО
+                  </span>
+                  <span class="apartment__price">от 53 200 000 руб</span>
+                </div>
+                <div class="apartment__info">
+                  <span class="apartment__square">
+                    3 комнаты <br />
+                    82.5 м2 площадь
+                  </span>
+                  <a class="apartment__leave-request">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="object">
+        <div class="object__wrapper">
+          <div class="object__card">
+            <div class="object__card-title">Делюкс</div>
+            <div class="object__card-description">Непревзойденная роскошь с эксклюзивными преимуществами</div>
+          </div>
+
+          <button class="object__btn btn btn_primary">
+            Все объекты премиум
+            <img class="object__btn-icon" src="./img/icons/icons.svg#arrow-right-btn" alt="" />
+          </button>
+
+          <div class="object__apartments">
+            <div class="object__apartment apartment">
+              <img src="./img/index/deluxe-1.jpg" alt="" class="apartment__img" />
+
+              <div class="apartment__description">
+                <div class="apartment__info">
+                  <span class="apartment__name">
+                    Ильинка 3/8 <br />
+                    ЦАО
+                  </span>
+                  <span class="apartment__price">от 486 490 000 руб</span>
+                </div>
+                <div class="apartment__info">
+                  <span class="apartment__square">
+                    7 комнаты <br />
+                    202.5 м2 площадь
+                  </span>
+                  <a class="apartment__leave-request">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="object__apartment apartment">
+              <img src="./img/index/deluxe-2.jpg" alt="" class="apartment__img" />
+
+              <div class="apartment__description">
+                <div class="apartment__info">
+                  <span class="apartment__name">
+                    Чистые Пруды <br />
+                    ЦАО
+                  </span>
+                  <span class="apartment__price">от 563 800 000 руб</span>
+                </div>
+                <div class="apartment__info">
+                  <span class="apartment__square">
+                    6 комнаты <br />
+                    193.1 м2 площадь
+                  </span>
+                  <a class="apartment__leave-request">Оставить заявку</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       @@include('components/contacts-icons.html')
     </main>
     @@include('html/footer.html')
