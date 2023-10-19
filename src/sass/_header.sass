@@ -1,0 +1,115 @@
+.navigation
+  &__link
+    text-decoration: none
+    color: #744D3A
+    font-size: 22px
+    font-weight: 300
+    padding-bottom: 29px
+    align-self: flex-start
+
+    &_active, &:hover
+      border-bottom: 3px solid #E5A484
+      @media screen and (max-width: $landscape)
+        border-bottom: none
+
+    @media screen and (max-width: $landscape)
+      font-size: 6px
+      text-transform: uppercase
+      font-weight: 500
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-bottom: 0
+      &:hover
+        border: none
+
+    &-icon
+      display: none
+      width: 13px
+      height: 13px
+      text-align: center
+      @media screen and (max-width: $landscape)
+        display: block
+
+.header
+  &__wrapper
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    max-width: 1800px
+    margin: 0 auto
+    gap: 36px
+    border-bottom: 1px solid #E8C8B9
+    width: calc(100% - 120px)
+
+    @media screen and (max-width: $landscape)
+      justify-content: center
+      height: 25px
+      width: 100%
+      margin: 0
+
+  &__group
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    width: calc(100% - 192px)
+    @media screen and (max-width: $landscape)
+      position: fixed
+      bottom: 0
+      justify-content: space-evenly
+      width: 100%
+      background-color: white
+      padding: 13px 0 16px
+
+  &__logo
+    position: relative
+    width: 192px
+    height: 100%
+    align-self: flex-start
+    @media screen and (max-width: $landscape)
+      width: 133px
+    @media screen and (max-width: $mobile)
+      width: 86px
+
+    &-img
+      display: block
+      width: inherit
+      position: absolute
+      top: -2px
+      left: 0
+
+  &__navigation
+    display: flex
+    flex-flow: row nowrap
+    gap: 30px
+    align-items: center
+
+  &__contacts
+    display: flex
+    flex-flow: row nowrap
+    align-items: center
+    gap: 32px
+    margin: 23px 0 22px
+    @media screen and (max-width: $landscape)
+      margin: 0
+
+    &-item
+      color: #685C56
+      font-size: 20px
+      font-weight: 400
+      line-height: 36px
+      text-transform: uppercase
+      display: flex
+      flex-flow: row nowrap
+      align-items: center
+      gap: 18px
+      @media screen and (max-width: $landscape)
+        display: none
+
+    &-btn
+      padding: 9px
+      font-size: 16px
+      font-weight: 300
+      @media screen and (max-width: $landscape)
+        padding: 7px 15px
+        font-size: 8px
