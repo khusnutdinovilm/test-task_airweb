@@ -6,6 +6,44 @@
   font-family: Jost
   font-style: normal
 
+body
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+main
+  background-color: black
+
+.contacts-icons
+  position: sticky
+  float: right
+  bottom: 63px
+  right: 25px
+  margin-bottom: 6px
+  @media screen and (min-width: $small)
+    bottom: 80px
+  @media screen and (min-width: $medium)
+    margin: 0
+    position: relative
+    bottom: (-272px + 25px)
+  @media screen and (min-width: $large)
+    bottom: (-297px + 16px)
+
+  &__group
+    display: flex
+    flex-flow: row nowrap
+    gap: 8px
+  &__icon
+    cursor: pointer
+    width: 37px
+    height: 37px
+    @media screen and (min-width: $medium)
+      width: 50px
+      height: 50px
+    @media screen and (min-width: $large)
+      width: 75px
+      height: 75px
+
 a
   text-decoration: none
 
