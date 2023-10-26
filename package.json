@@ -9,7 +9,8 @@
     "serve": "gulp serve & gulp dev",
     "svg-sprite": "gulp svg-sprite",
     "build": "gulp build --build && gulp svg-sprite --build && npm run save-json-api",
-    "deploy": "npm run build && gulp deploy",
+    "copy-favicon": "cp ./favicon.ico ./dist",
+    "deploy": "npm run build && npm run copy-favicon && gh-pages -d dist",
     "zip": "gulp zip --build"
   },
   "author": "",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "browser-sync": "latest",
     "del": "^6.1.1",
+    "gh-pages": "^6.0.0",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
     "gulp-file-include": "latest",
